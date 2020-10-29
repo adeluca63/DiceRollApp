@@ -78,8 +78,32 @@ class ViewController: UIViewController
         let num2 = Int(Num) ?? 0
         
         let result = num1 + num2
-        sum.text = String(result)
         
+        if result == 7
+        {
+            view.backgroundColor = UIColor.green
+        }
+        else if result == 11
+        {
+            view.backgroundColor = UIColor.green
+        }
+        else if result == 2
+        {
+            view.backgroundColor = UIColor.red
+        }
+        else if result == 3
+        {
+            view.backgroundColor = UIColor.red
+        }
+        else if result == 12
+        {
+            view.backgroundColor = UIColor.red
+        }
+        else
+        {
+            view.backgroundColor = UIColor.white
+        }
+        sum.text = String(result)
     }
     
     
