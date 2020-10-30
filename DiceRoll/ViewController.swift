@@ -18,6 +18,8 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
     }
+    
+    
     @IBAction func myButton(_ sender: UIButton)
     {
         let randomInt = Int.random(in: 1...6)
@@ -82,22 +84,39 @@ class ViewController: UIViewController
         if result == 7
         {
             view.backgroundColor = UIColor.green
+            let alert = UIAlertController(title: "You Won!", message: "Congratulations on winning the game!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Thank You!", style: .default, handler: nil))
+
+            self.present(alert, animated: true)
         }
         else if result == 11
         {
             view.backgroundColor = UIColor.green
+            let alert2 = UIAlertController(title: "You Won!", message: "Congratulations on winning the game!", preferredStyle: .alert)
+            alert2.addAction(UIAlertAction(title: "Thank You!", style: .default, handler: nil))
+            self.present(alert2, animated: true)
         }
+            
         else if result == 2
         {
             view.backgroundColor = UIColor.red
+            let alert3 = UIAlertController(title: "You Lost!", message: "Congratulations on lsoign the game!", preferredStyle: .alert)
+            alert3.addAction(UIAlertAction(title: "Try Again!", style: .default, handler: nil))
+            self.present(alert3, animated: true)
         }
         else if result == 3
         {
             view.backgroundColor = UIColor.red
+            let alert4 = UIAlertController(title: "You Lost!", message: "Congratulations on losing the game!", preferredStyle: .alert)
+            alert4.addAction(UIAlertAction(title: "Try Again!", style: .default, handler: nil))
+            self.present(alert4, animated: true)
         }
         else if result == 12
         {
             view.backgroundColor = UIColor.red
+            let alert5 = UIAlertController(title: "You Lost!", message: "Congratulations on losing the game!", preferredStyle: .alert)
+            alert5.addAction(UIAlertAction(title: "Try Again!", style: .default, handler: nil))
+            self.present(alert5, animated: true)
         }
         else
         {
